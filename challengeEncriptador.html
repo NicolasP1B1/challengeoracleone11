@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="stylesEncroptador.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <header>
+        <a href="https://www.aluracursos.com/" target="_blank"><img id="imagen-header" src="Alaura1.png" alt="imagen logo Alura"></a>
+    </header>
+    
+    <main>
+    <section>
+        <div id="caja-titulo">
+            <h1 id="titulo">Encriptador de Texto</h1>
+        </div>
+
+        <textarea id="caja-texto" cols="50" rows="9" placeholder="Ingrese el texto aquí" style="font-family: 'Montserrat', sans-serif"></textarea>
+        
+        <h6><i class="fa-solid fa-circle-exclamation"></i> Solo letras minisculas y sin acentos</h6>
+
+        <div id="botones">
+            <button id="btn-1" style="font-family: 'Montserrat', sans-serif" onclick="btnEncriptar()">Encriptar</button>
+            <button id="btn-2" style="font-family: 'Montserrat', sans-serif" onclick="btnDesencriptar()">Desencriptar</button>
+        </div>
+
+    </section>
+
+    <section>
+
+        <div id="caja2">
+            <textarea id="caja-respuesta" cols="18" rows="15" placeholder="Ningun mensaje fue encontrado"></textarea>
+            <button id="btn-copy">Copiar</button>
+        </div>
+
+    </section>
+    </main>
+
+    
+        <footer>
+        <p id="footer">N1B1P1</p>
+        </footer>
+
+
+    <script src="scrptEncriptador.js"></script>
+    <script src="https://kit.fontawesome.com/8728b4c91c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

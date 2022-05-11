@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 100%;
+    background-color: #d6d6d6;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    margin: 15px 35px;
+    cursor: pointer;
+}
+
+#caja-titulo{
+    padding: 4%;
+    display: table;
+    cursor: default;
+}
+
+#titulo{
+    display: block;
+    font-size: 40px;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 10.5em;
+
+    animation: typing 2s steps(20), 
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing {
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+#caja-texto{
+    background-color: white;
+    color: #0A3871;
+    padding: 20px;
+    margin: 0em 2em;
+    border-radius: 20px;
+    resize: none;
+}
+
+#caja-texto::placeholder{
+    color: #0A3871;
+}
+
+#caja-texto:hover{
+    box-shadow: 10px 10px 10px #0A3871;
+    transition: 0.5s;
+}
+
+
+#caja-respuesta{
+    background-color: white;
+    color: #0A3871;
+    padding: 20px;
+    margin: 1em 2em;
+    position: relative;
+    border-radius: 20px;
+    resize: none;
+    cursor: default;
+}
+
+#caja-respuesta::placeholder{
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#caja-respuesta:hover{
+    box-shadow: 10px 10px 10px #0A3871;
+    transition: 0.5s;
+}
+
+h6{
+    font-size: 25px;
+    margin: 1em 2.6em;
+    cursor: default;
+}
+
+#botones{
+    margin: 0em 2em;
+}
+
+#btn-1{
+    border-radius: 20px;
+    padding: 5px 50px;
+    font-size: 30px;
+    background-color: #0A3871;
+    color: white;
+    border: 1px solid #0A3871;
+}
+
+#btn-1:hover{
+    box-shadow: 10px 10px 10px #6e6e6e;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#btn-2{
+    border-radius: 20px;
+    padding: 5px 50px;
+    font-size: 30px;
+    background-color: white;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+#btn-2:hover{
+    box-shadow: 10px 10px 10px #6e6e6e;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#btn-copy{
+    text-align: center;
+    margin: 0 0 0 150px;
+    border-radius: 20px;
+    padding: 5px 50px;
+    font-size: 30px;
+    background-color: #0A3871;
+    color: white;
+    border: 1px solid #0A3871;
+}
+
+#btn-copy:hover{
+    box-shadow: 10px 10px 10px #6e6e6e;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 30px;
+    
+}
+
+#footer{
+    background-color: #000000;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1440px){
+    *{
+       line-height: 130%;
+    }
+    #caja-texto{
+        margin-left: 1em;
+    }
+    footer{
+        margin-top: 5em;
+    }
+    #footer{
+        padding: 75px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    *{
+        line-height: 130%;
+    }
+    main{
+        display: inline;
+    }
+     #caja-texto{
+         margin-left: 2em;
+        height: 500px;
+        width: 100%;
+    }
+    #caja-respuesta{
+        height: 400px;
+        width: 100%;
+    }
+     footer{
+        margin-top: 2em 5em;
+    }
+     #footer{
+        padding: 90px;
+        width: 100%;
+    }
+    #btn-copy{
+        margin: 0 65px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    h6{
+        width: 100%;
+    }
+    #btn-1{
+        margin-bottom: 20px;
+    }
+}
+
